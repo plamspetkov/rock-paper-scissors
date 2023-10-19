@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'Barlow', sans-serif;
+	line-height: 1.5;
+	font-weight: 600;
+	font-size: 16px;
+
+	background-image: radial-gradient(
+		circle,
+		hsl(214, 47%, 23%),
+		hsl(237, 49%, 15%)
+	);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+#root {
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1920px;
+	min-width: 375px;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.matchBoard {
+	transition: gap 1s ease-in-out;
+}
