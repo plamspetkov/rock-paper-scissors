@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-	font-family: 'Barlow', sans-serif;
+	font-family: 'Barlow Semi Condensed', sans-serif;
 	line-height: 1.5;
 	font-weight: 600;
 	font-size: 16px;
 
 	background-image: radial-gradient(
-		circle,
+		circle at top,
 		hsl(214, 47%, 23%),
 		hsl(237, 49%, 15%)
 	);

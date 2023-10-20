@@ -42,9 +42,9 @@ const Choices = ({ choice }) => {
 
 	return (
 		<div
-			className={`  w-[7rem] h-[7rem]  ${gradient} flex items-center justify-center rounded-[50%] shadow-big-inner z-10 md:w-[20rem] md:h-[20rem]`}
+			className={`  w-[7rem] h-[7rem]  ${gradient} flex items-center justify-center rounded-[50%] shadow-big-inner md:shadow-bigger-inner z-10 md:w-[20rem] md:h-[20rem]`}
 		>
-			<span className="bg-white shadow-small-inner p-[1rem] rounded-[50%] w-[5.5rem] h-[5.5rem]  flex items-center justify-center -translate-y-[0.1rem] md:w-[15rem] md:h-[15rem]">
+			<span className="bg-white shadow-small-inner md:shadow-smallxl-inner p-[1rem] rounded-[50%] w-[5.5rem] h-[5.5rem]  flex items-center justify-center -translate-y-[0.1rem] md:w-[15rem] md:h-[15rem]">
 				<img
 					src={src}
 					alt={alt}

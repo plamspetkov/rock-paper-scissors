@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../assets/images/logo-bonus.svg';
+import { motion } from 'framer-motion';
 
 const ScoreBoard = ({ score }) => {
+	const [animationKey, setAnimationKey] = useState(score);
+
+	useEffect(() => {
+		setAnimationKey(score);
+	}, [score]);
+
 	return (
 		<div className="border-2 border-outline rounded-[0.3rem] w-full flex justify-between md:w-[44rem] md:rounded-[0.8rem] ">
 			<img
@@ -13,9 +20,15 @@ const ScoreBoard = ({ score }) => {
 				<span className="text-score text-[0.6rem] uppercase font-bold tracking-widest	md:text-[1rem]">
 					Score
 				</span>
-				<span className="text-dark text-[2.5rem] font-barlow leading-[2.5rem] md:text-6xl font-bold">
+				<motion.span
+					key={animationKey}
+					initial={{ scale: 1 }}
+					animate={{ scale: [1, 2, 1] }}
+					transition={{ times: [0, 0.2, 1], duration: 0.5 }}
+					className="text-dark text-[2.5rem] font-barlow leading-[2.5rem] md:text-6xl font-bold"
+				>
 					{score}
-				</span>
+				</motion.span>
 			</div>
 		</div>
 	);

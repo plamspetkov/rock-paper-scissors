@@ -7,7 +7,7 @@ export default {
 				1920: '1920px',
 			},
 			fontFamily: {
-				barlow: ['Barlow', 'sans-serif'],
+				barlow: ['Barlow Semi Condensed', 'sans-serif'],
 			},
 			spacing: {
 				58: '58.6825rem;',
@@ -22,15 +22,15 @@ export default {
 			},
 			backgroundImage: (theme) => ({
 				'gradient-scissors':
-					'radial-gradient(circle, hsl(39, 89%, 49%), hsl(40, 84%, 53%))',
+					'radial-gradient(circle at top, hsl(39, 89%, 49%), hsl(40, 84%, 53%))',
 				'gradient-paper':
-					'radial-gradient(circle, hsl(230, 89%, 62%), hsl(230, 89%, 65%))',
+					'radial-gradient(circle at top, hsl(230, 89%, 62%), hsl(230, 89%, 65%))',
 				'gradient-rock':
-					'radial-gradient(circle, hsl(349, 71%, 52%), hsl(349, 70%, 56%))',
+					'radial-gradient(circle at top, hsl(349, 71%, 52%), hsl(349, 70%, 56%))',
 				'gradient-lizard':
-					'radial-gradient(circle, hsl(261, 73%, 60%), hsl(261, 72%, 63%))',
+					'radial-gradient(circle at top, hsl(261, 73%, 60%), hsl(261, 72%, 63%))',
 				'gradient-cyan':
-					'radial-gradient(circle, hsl(189, 59%, 53%), hsl(189, 58%, 57%))',
+					'radial-gradient(circle at top, hsl(189, 59%, 53%), hsl(189, 58%, 57%))',
 				'gradient-white':
 					'radial-gradient(53.68% 53.68% at 50% 52.8%, #E6E6E6 86.46%, #B0BCE4 88.54%, #B0BCE4 100%);',
 				'gradient-win':
@@ -44,6 +44,8 @@ export default {
 			},
 			boxShadow: {
 				'big-inner': 'inset 0 -5px 0 0 rgba(0, 0, 0, 0.20)',
+				'bigger-inner': 'inset 0 -15px 0 0 rgba(0, 0, 0, 0.20)',
+				'smallxl-inner': 'inset 0 15px 0 0 rgba(0, 0, 0, 0.20)',
 				'small-inner': 'inset 0 5px 0 0 rgba(0, 0, 0, 0.20)',
 				'score-shadow': ' 0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
 			},

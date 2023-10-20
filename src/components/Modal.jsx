@@ -8,7 +8,7 @@ import Card from './Card';
 const Backdrop = ({ onClick }) => {
 	return (
 		<div
-			className="fixed inset-0 w-full h-[100vh] z-10 bg-modal"
+			className="fixed inset-0 w-full h-[100vh] z-40 bg-modal"
 			onClick={onClick}
 		/>
 	);

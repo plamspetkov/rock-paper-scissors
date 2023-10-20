@@ -55,9 +55,10 @@ const PlayBoard = ({ handlePlayerChoice }) => {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{
-				opacity: { ease: 'linear', duration: 0.5 },
+				opacity: { ease: 'linear', duration: 0.3 },
 				layout: { duration: 1 },
 			}}
+			exit={{ opacity: 0 }}
 			className="relative mt-[9.2rem] flex items-center justify-center md:w-[21rem] md:aspect-square"
 		>
 			<img
