@@ -15,7 +15,7 @@ const MatchBoard = ({
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
-			className={` flex justify-end w-full h-[17rem] pt-[5rem] md:h-[33rem]`}
+			className={` flex justify-end w-full h-[17rem] pt-[5rem] md:h-[34rem] `}
 		>
 			<div
 				className={` flex flex-col flex-1 pt-[2.278rem] gap-[1.5rem] items-center justify-between md:flex-col-reverse  md:animate-slide-left md:gap-[4rem]`}
